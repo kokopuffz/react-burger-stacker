@@ -1,10 +1,20 @@
-import { Component } from "react";
-import "./App";
+import React from 'react'
 
-class BurgerPane extends Component {
-  render() {
-    return <button onClick={this.props.clearBurger} className="clearbutton">clear button</button>;
-  }
+export default function Clear({clearBurger}) {
+  return (
+    <button onClick={clearBurger} className="clearbutton">clear button</button>
+  )
 }
 
-export default BurgerPane;
+
+
+// import { Component } from "react";
+// import "./App";
+
+// class BurgerPane extends Component {
+//   render() {
+//     return <button onClick={this.props.clearBurger} className="clearbutton">clear button</button>;
+//   }
+// }
+
+// export default BurgerPane;
